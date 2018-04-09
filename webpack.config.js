@@ -12,6 +12,8 @@ module.exports = {
     port: '9000',
     open: true,
   },
+  devtool: 'eval-source-map',  // デプロイするときには削除
+  mode: 'development', // productionにしてビルド
   module: {
     rules: [
       {
